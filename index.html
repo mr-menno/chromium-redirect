@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chromium Redirect</title>
+    <script type="text/javascript">
+try {
+    var state = JSON.parse(atob(new URLSearchParams(window.location.hash).get('state')));
+    window.location='https://'+state.chromiumapp+'.chromiumapp.org/'+window.location.hash;
+} catch(e) {
+    
+}
+    </script>
+</head>
+<body>
+
+    Chromium Redirect
+
+</body>
+</html>
